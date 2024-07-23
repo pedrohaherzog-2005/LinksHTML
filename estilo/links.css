@@ -1,0 +1,134 @@
+/* links.css */
+
+/* SELETORES PERSONALIZADOS
+   #   = id
+   .   = class
+   :   = pseudo-class
+   ::  = pseudo-element
+   >   = clildren
+*/
+
+:root {
+    --cor0: #8d8d8d;
+    --cor1: #01050A;
+    --cor2: #0D1117;
+    --cor3: #161B22;
+    --cor4: #21262D;
+    --cor5: #30363D;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor4));
+    padding-top: 30px;
+    min-height: 80px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    font-size: 3em;
+    color: white;
+}
+
+main {
+    background-color: white;
+    border-radius: 5px;
+    text-align: left;
+    margin-top: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    min-width: 200px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    padding: 25px;
+    margin: auto;
+    left: 50%;
+    top: 56%;
+}
+
+main h2 {
+    background-image: linear-gradient(to right, var(--cor0), var(--cor1));
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.193);
+    text-align: left;
+    padding: 10px;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: darkred;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+}
+
+a::before {
+    content: '⇒ ';
+}
+
+.repositorio::after {
+    content: ' ☑';
+    color: rgb(74, 23, 169);
+}
+
+.canal::after {
+    content: ' ►';
+    color: rgb(180, 38, 67);
+}
+
+.site::after {
+    content: ' ➥';
+    color: rgb(8, 8, 106);
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    font-size: 12pt;
+    position: relative;
+    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    bottom: -557px;
+    color: var(--cor0);
+}
+
+footer .rodape {
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 3px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+footer .rodape:hover {
+    text-decoration: underline;
+    color: var(--cor5);
+}
