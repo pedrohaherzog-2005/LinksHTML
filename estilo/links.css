@@ -26,8 +26,25 @@
 }
 
 body {
-    background-color: var(--cor0);
+    background-color: var(--cor5);
     font-family: var(--fonte-padrao);
+}
+
+main {
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.555);
+    max-width: 900px;
+    min-width: 600px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    padding: 15pt;
+    height: 230px;
+    margin: auto;
+    left: 50%;
+    top: 50%;
 }
 
 header {
@@ -35,6 +52,7 @@ header {
     padding-top: 30px;
     min-height: 80px;
     text-align: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.275);
 }
 
 header h1 {
@@ -46,49 +64,36 @@ header h1 {
     color: white;
 }
 
-main {
-    background-color: white;
-    border-radius: 5px;
-    text-align: left;
-    margin-top: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
-    min-width: 200px;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    padding: 25px;
-    margin: auto;
-    left: 50%;
-    top: 56%;
-}
-
-main h2 {
-    background-image: linear-gradient(to right, var(--cor0), var(--cor1));
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.193);
-    text-align: left;
+main ul {
+    background-color: var(--cor0);
+    list-style: none;
+    margin-top: 25px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.418);
+    min-width: 250px;
     padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.466);
 }
 
-a {
+#lista {
     color: red;
     text-decoration: none;
     font-weight: bold;
 }
 
-a:visited {
+#lista:visited {
     color: darkred;
 }
 
-a:hover {
+#lista:hover {
     color: black;
     text-decoration: underline;
 }
 
-a:active {
+#lista:active {
     color: yellow;
 }
 
-a::before {
+#lista::before {
     content: '⇒ ';
 }
 
@@ -108,20 +113,19 @@ a::before {
 }
 
 footer {
-    background-color: black;
+    font-style: italic;
     text-align: center;
     font-size: 12pt;
     position: relative;
     padding: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    bottom: -557px;
-    color: var(--cor0);
+    padding-left: 20px;
+    bottom: -495px;
 }
 
 footer .rodape {
     color: white;
     padding: 5px;
+    padding-right: 10px;
     font-weight: bold;
     border-radius: 3px;
     text-decoration: none;
@@ -129,6 +133,7 @@ footer .rodape {
 }
 
 footer .rodape:hover {
-    text-decoration: underline;
-    color: var(--cor5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.555);
+    background-color: var(--cor0);
+    color: var(--cor1);
 }
